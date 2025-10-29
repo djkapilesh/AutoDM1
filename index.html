@@ -3,22 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AutoDM Legal Policies</title>
+  <title>AutoDM – Privacy Policy, Terms & Data Deletion</title>
   <style>
+    :root {
+      --bg: #fafafa;
+      --text: #222;
+      --accent: #0077cc;
+      --header-bg: #111;
+      --header-text: #fff;
+    }
+
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #fafafa;
-      color: #222;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
     }
+
     header {
-      background: #111;
-      color: #fff;
-      padding: 20px 0;
+      background: var(--header-bg);
+      color: var(--header-text);
       text-align: center;
+      padding: 20px 10px;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
     main {
       max-width: 900px;
       margin: 40px auto;
@@ -27,31 +61,57 @@
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
-    h1, h2 {
-      color: #111;
-    }
-    h1 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
-    }
+
     section {
-      margin-bottom: 50px;
+      padding: 40px 0;
+      border-bottom: 1px solid #eee;
     }
+
+    h2 {
+      color: #111;
+      margin-top: 0;
+    }
+
+    h3 {
+      color: #333;
+      margin-top: 1.2em;
+    }
+
     footer {
       text-align: center;
-      padding: 30px;
       background: #111;
       color: #bbb;
+      padding: 25px 10px;
       font-size: 14px;
     }
-    a { color: #0077cc; }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>AutoDM – Legal Policies</h1>
-    <p>Privacy Policy • Terms of Service • Data Deletion Instructions</p>
+    <p>Privacy Policy • Terms of Service • Data Deletion</p>
   </header>
+
+  <nav>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms of Service</a>
+    <a href="#data-deletion">Data Deletion</a>
+  </nav>
 
   <main>
     <!-- =================== PRIVACY POLICY =================== -->
